@@ -8,6 +8,12 @@ public class Cuenta {
     private String persona;
     private BigDecimal saldo;
 
+    //constructor
+    public Cuenta(String persona, BigDecimal saldo) {
+        this.persona = persona;
+        this.saldo = saldo;
+    }
+
     //getters y setters
     public String getPersona() {
         return persona;
