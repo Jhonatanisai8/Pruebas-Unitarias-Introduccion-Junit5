@@ -18,7 +18,7 @@ public class CuentaTest {
         //hacemos un test osea comparamos
         assertEquals(esperado, real);
         
-        //otro metodo 
+        //otro metodo  devuelve true o false
         assertTrue(real.equals("Andrez"));
         
     }
