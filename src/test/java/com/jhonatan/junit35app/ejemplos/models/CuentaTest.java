@@ -28,5 +28,9 @@ public class CuentaTest {
         Cuenta cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
         //el saldo se convierte a double
         assertEquals(1000.12345, cuenta.getSaldo().doubleValue());
+
+        //otro metodo de Assertions que el saldo no sea negativo
+        assertFalse(cuenta.getSaldo().compareTo(BigDecimal.ZERO) < 0);
+        assertTrue(cuenta.getSaldo().compareTo(BigDecimal.ZERO) > 0);
     }
 }
