@@ -17,10 +17,16 @@ public class CuentaTest {
 
         //hacemos un test osea comparamos
         assertEquals(esperado, real);
-        
+
         //otro metodo  devuelve true o false
         assertTrue(real.equals("Andrez"));
-        
+
     }
 
+    @Test
+    void saldoCuenta() {
+        Cuenta cuenta = new Cuenta("Andres", new BigDecimal("1000.12345"));
+        //el saldo se convierte a double
+        assertEquals(1000.12345, cuenta.getSaldo().doubleValue());
+    }
 }

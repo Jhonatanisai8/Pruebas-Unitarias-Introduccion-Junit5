@@ -10,7 +10,7 @@ public class Cuenta {
 
     //constructor
     public Cuenta(String persona, BigDecimal saldo) {
-        this.persona = persona.toUpperCase();
+        this.persona = persona;
         this.saldo = saldo;
     }
 
