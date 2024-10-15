@@ -66,7 +66,7 @@ public class CuentaTest {
         assertEquals(900, miCuenta.getSaldo().intValue());
 
         // toPlainString = devuelve un String plano
-        assertEquals("1000.12345", miCuenta.getSaldo().toPlainString());
+        assertEquals("900.12345", miCuenta.getSaldo().toPlainString());
     }
     @Test
     void testCreditoCuenta() {

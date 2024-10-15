@@ -50,11 +50,11 @@ public class Cuenta {
         return Objects.equals(this.saldo, other.saldo);
     }
 
-    public void debito(BigDecimal monto){
-        
+    public void debito(BigDecimal monto) {
+        this.saldo = this.saldo.subtract(monto);
     }
-    
-    public void credito(BigDecimal monto){
-        
+
+    public void credito(BigDecimal monto) {
+        this.saldo = this.saldo.add(monto);
     }
 }
